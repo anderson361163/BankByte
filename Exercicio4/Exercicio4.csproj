@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E4D0EFE8-BEFB-43CD-B2C6-DBAA74569353}</ProjectGuid>
+    <ProjectGuid>{0F8730B6-EF0F-4BCB-B029-8729CD1C7DF7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BankByte</RootNamespace>
-    <AssemblyName>BankByte</AssemblyName>
+    <RootNamespace>Exercicio4</RootNamespace>
+    <AssemblyName>Exercicio4</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Funcionario\Auxiliar.cs" />
-    <Compile Include="Funcionario\Desenvolvedor.cs" />
-    <Compile Include="Funcionario\Designer.cs" />
-    <Compile Include="Funcionario\Diretor.cs" />
-    <Compile Include="Funcionario\Funcionario.cs" />
-    <Compile Include="Funcionario\GerenteDeConta.cs" />
-    <Compile Include="GerenciadorBonificacao.cs" />
+    <Compile Include="Conta.cs" />
+    <Compile Include="ContaCorrente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

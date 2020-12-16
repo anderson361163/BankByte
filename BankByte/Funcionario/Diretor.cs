@@ -6,13 +6,23 @@ using System.Threading.Tasks;
 
 namespace BankByte.Funcionario
 {
-    class Diretor : Funcionario
+    public class Diretor : Funcionario
     {
+        public Diretor(string cpf) : base(cpf, 5000)
+        {
+            Console.WriteLine("CRIANDO DIRETOR");
+        }
+        
         //MESMO COM O ATRIBUTO SALARIO NA CLASSE PAI, NOS CONSEGUIMOS ACESSAR
         //NA CLASSE FILHA, JÁ QUE ELA HERDA ESSES ATRIBUTOS
         public override double GetBonificacao()
         {
-            return Salario + base.GetBonificacao();
+            return Salario * 1.5;
+        }
+
+        public override void AumentarSalario()
+        {
+            Salario *= 1.15;
         }
     }
 }
