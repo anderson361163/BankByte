@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BankByte.Sistemas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BankByte.Funcionario
 {
-    public class GerenteDeConta : Funcionario
+    public class GerenteDeConta : FuncionarioAutenticavel
     {
         public GerenteDeConta(string cpf): base(cpf, 3500)
         {

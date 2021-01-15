@@ -1,4 +1,5 @@
 ﻿using BankByte.Funcionario;
+using BankByte.Sistemas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +13,33 @@ namespace BankByte.Funcionario
     {
         static void Main(string[] args)
         {
-            CalcularBonificacao();
+            //CalcularBonificacao();
+            UsarSistema();
             //FINALIZA O PROGRAMA
             Console.WriteLine("\nPressione a tecla Enter para finalizar o programa . . .");
             Console.ReadLine();
 
+        }
+
+        public static void UsarSistema()
+        {
+            SistemaInterno sistemaInterno = new SistemaInterno();
+
+            Diretor roberta = new Diretor("159.753.398-04");
+            roberta.Nome = "Roberta";
+            roberta.Senha = "123";
+
+            GerenteDeConta camila = new GerenteDeConta("326.985.628-89");
+            camila.Nome = "Camila";
+            camila.Senha = "abc";
+
+            ParceiroComercial parceiro = new ParceiroComercial();
+            parceiro.Senha = "123456";
+
+            //LOGANDO OS USUÁRIOS
+            sistemaInterno.Logar(roberta, "123");
+            sistemaInterno.Logar(camila, "abc");
+            sistemaInterno.Logar(parceiro, "123456");
         }
 
         public static  void CalcularBonificacao()
@@ -47,9 +70,6 @@ namespace BankByte.Funcionario
 
             Console.WriteLine("Total de bonificações do mês {0}.",
                             gerenciador.GetTotalBonicacao());
-
-
-
         }
     }
 }

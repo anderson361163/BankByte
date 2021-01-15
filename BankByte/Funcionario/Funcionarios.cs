@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace BankByte.Funcionario
 {
-    public abstract class Funcionario
+    public abstract class Funcionarios
     {
         public static int TotalDeFuncionarios { get; private set; }
         public string Nome { get; set; }
         public string CPF { get; private set; }
         public double Salario { get; protected set; }
 
-        public Funcionario(String cpf, double salario)
+        public Funcionarios(String cpf, double salario)
         {
             Console.WriteLine("CRIANDO FUNCIONÁRIO");
             CPF = cpf;

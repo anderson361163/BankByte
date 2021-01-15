@@ -10,7 +10,7 @@ namespace BankByte.Funcionario
     class GerenciadorBonificacao
     {
         private static double _totalBonificacao;
-        public void Registrar(Funcionario funcionario)
+        public void Registrar(Funcionarios funcionario)
         {
             _totalBonificacao += funcionario.GetBonificacao();
         }

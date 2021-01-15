@@ -47,11 +47,15 @@
     <Compile Include="Funcionario\Desenvolvedor.cs" />
     <Compile Include="Funcionario\Designer.cs" />
     <Compile Include="Funcionario\Diretor.cs" />
-    <Compile Include="Funcionario\Funcionario.cs" />
+    <Compile Include="Funcionario\FuncionarioAutenticavel.cs" />
+    <Compile Include="Funcionario\Funcionarios.cs" />
     <Compile Include="Funcionario\GerenteDeConta.cs" />
     <Compile Include="GerenciadorBonificacao.cs" />
+    <Compile Include="ParceiroComercial.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sistemas\Autenticavel.cs" />
+    <Compile Include="Sistemas\SistemaInterno.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

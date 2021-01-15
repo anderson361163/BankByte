@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankByte.Funcionario
 {
-    public class Designer : Funcionario
+    public class Designer : Funcionarios
     {
 
         public Designer(string cpf) : base(cpf, 3000)

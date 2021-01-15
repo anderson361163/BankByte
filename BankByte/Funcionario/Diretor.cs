@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BankByte.Sistemas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace BankByte.Funcionario
 {
-    public class Diretor : Funcionario
+    public class Diretor : FuncionarioAutenticavel
     {
+
         public Diretor(string cpf) : base(cpf, 5000)
         {
             Console.WriteLine("CRIANDO DIRETOR");
@@ -24,5 +26,6 @@ namespace BankByte.Funcionario
         {
             Salario *= 1.15;
         }
+
     }
 }
